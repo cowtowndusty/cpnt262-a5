@@ -3,8 +3,9 @@ const express = require('express')
 const dayjs = require('dayjs')
 const router = express.Router()
 const config = require('../config')
-const gallery = require('../data/gallery')
 const apiRoute = require('./api/v0')
+const Image = require('../models/image')
+
 
 // middleware for this router
 router.use((req, res, next) => {
@@ -29,24 +30,29 @@ router.get('/register', (req, res) => {
 
 // defining gallery page route
 router.get('/gallery', (req, res) => {
-  res.render('pages/gallery', { pageTitle: 'Gallery Directory' })
+  res.render('images/gallery', { pageTitle: 'Gallery Directory' })
 })
 
 // defining gallery search option for a5
-router.get('/gallery/:title', (req, res) => {
-  const image = gallery.find(function(item) {
+router.get('/images/:id', async (req, res, next) => {
+  // const image = gallery.find(function(item) {
 
-    return item.title === req.params.title
-  })
+  //   return item.title === req.params.title
+  // })
 
-  if (!image) {
-    res.sendStatus(404)
+  // if (!image) {
+  //   res.sendStatus(404)
+  //}
+  try {
+    const image = await Image.findOne({id: req.params.id})
+
+    return res.render('pages/image', {
+      pageTitle: image.title,
+      pic: image
+    })
+  } catch (err) {
+    return next(err)
   }
-
-  res.render('pages/image', {
-    pageTitle: image.title,
-    pic: image
-  })
 })
 
 // pulling some array data

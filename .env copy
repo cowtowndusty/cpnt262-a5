@@ -1,2 +1,0 @@
-PORT=3000
-MONGODB_URL=mongodb+srv://xenovex:CalgaryAlberta2021@cluster0.sizsu.mongodb.net/myFirstDatabase?retryWrites=true&w=majority

@@ -8,11 +8,11 @@
   <link rel="stylesheet" href="/css/navbar.css">
   <link rel="stylesheet" href="/css/404.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <title>404 Error - File Not Found</title>  
+  <title><%=status%> Error - <%=message%></title>  
 </head>
 <body>
   <%- include('../partials/nav') %>
-  <h1>404 Error - File Not Found</h1>
+  <h1><%=status%> Error - <%=message%></h1>
   <img src="/images/wrong hood.gif">
   <h2><a href="/">Back to Home Page</a></h2>
 </body>
