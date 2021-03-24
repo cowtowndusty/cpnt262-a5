@@ -1,0 +1,158 @@
+/* Reset */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Fonts and main styling */
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i|Source+Sans+Pro');
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: clamp(0.875rem, 1.5vw, 1.2rem);
+}
+
+h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: clamp(1.2rem, 2.5vw, 2.5rem);
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: clamp(1rem, 2.5vw, 2rem);
+}
+
+footer {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: clamp(0.875rem, 1.5vw, 1.2rem);
+  text-align: center;
+  margin: 1rem;
+  height: 2rem;
+}
+
+h1 {
+  text-align: center;
+  color: #3F4135;
+  margin-bottom: 1rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 0.075rem solid #3F4135;
+}
+
+h2 {
+  text-align: center;
+  margin: 0;
+  color: #3F4135;
+  padding-bottom: 0.5rem;
+}
+
+body {
+  background-color: #D9E4DC;
+}
+
+/* Layout & Styling for the content of the responsive image gallery */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+figure:hover {
+  transform: scale(1.01);
+}
+
+figure {
+  max-width: 37.5rem;
+  margin: auto;
+  position: relative;
+  transition: all 0.25s;
+  margin-bottom: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+img {
+  border-radius: 1.5rem;
+  box-shadow: 0 0 1rem black;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+figcaption {
+  color: #F3F0E9;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 0 0 1.5rem 1.5rem;
+}
+
+p {
+  margin: 0.25rem;
+}
+
+/* Creating a neat little linear gradient effect for the photo credit links */
+
+.link {
+  text-decoration: none;
+  line-height: 1;
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  padding: 5px 5px;
+  overflow: hidden;
+  color: #6BC0D8;
+  vertical-align: bottom;
+  transition: color .3s ease-out;
+  border-radius: .5rem;
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  transform: translateY(calc(100% - 2px));
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(60deg, #6BC0D8 0%, #2C7D9C 100%);
+  transition: transform .25s ease-out;
+  border-radius: .5rem;
+}
+
+.link:hover { 
+  color: #fff; 
+}
+
+.link:hover::before {
+  transform: translateY(0);
+  transition: transform .25s ease-out;
+}
+
+/* Media Queries to ensure responsive images and execution of intended layouts */
+
+@media screen and (max-width: 119.563rem) {
+  figure {
+    max-width: 47%;
+  }
+}
+
+@media screen and (max-width: 68rem) {
+  figure {
+    max-width: 100%;
+  }
+}

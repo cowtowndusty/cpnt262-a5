@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  }
+  
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.card {
+  width: 23.75rem;
+  padding: 1.25rem;
+  border-radius: 0.375rem;
+  box-shadow: 0.625rem 0.625rem 0.625rem #6BC0D8;
+  background: #2C7D9C;
+}
+  
+h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 3.75rem;
+}
+
+  
+.input-border {
+  width: 100%;
+  height: 2.5rem;
+  position: relative;
+  margin-bottom: 1.875rem;
+}
+  
+.text {
+  width: 95%;
+  height: 100%;
+  padding: 0 0.625rem;
+  border: none;
+  border-bottom: 0.125rem solid white;
+  background: none;
+  font-size: 1.125rem;
+  color: white;
+}
+  
+.border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0.125rem;
+  background: #6BC0D8;
+  transition: .5s;
+}
+  
+.text:focus ~ .border,
+.text:valid ~ .border {
+  width: 100%;
+}
+  
+label {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.875rem;
+  color: white;
+  pointer-events: none;
+  font-size: 1.125rem;
+  transition: .5s;
+}
+  
+.text:focus ~ label,
+.text:valid ~ label {
+  top: -0.75rem;
+  left: 0;
+  color: #6BC0D8;
+  font-size: 0.875rem;
+}
+  
+.btn {
+  width: 100%;
+  height: 3.125rem;
+  border-radius: 0.5rem;
+  background: none;
+  border: 0.125rem solid white;
+  color: white;
+  font-size: 1.125rem;
+  transition: .5s;
+}
+  
+.btn:hover {
+  border: 0.125rem solid #6BC0D8;
+}

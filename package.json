@@ -1,0 +1,19 @@
+{
+  "name": "cpnt262-a5",
+  "version": "0.1.0",
+  "description": "Assignment 5: JSON Routes with Heroku and MongoDB Atlas",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "Dustin Shulz",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.1"
+  }
+}
