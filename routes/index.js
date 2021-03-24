@@ -29,11 +29,11 @@ router.get('/register', (req, res) => {
 })
 
 // defining gallery page route
-router.get('/gallery', (req, res) => {
-  res.render('images/gallery', { pageTitle: 'Gallery Directory' })
+router.get('/images', (req, res) => {
+  res.render('pages/images', { pageTitle: 'Gallery Directory' })
 })
 
-// defining gallery search option for a5
+// defining 'images' single image page rendered view based on :id
 router.get('/images/:id', async (req, res, next) => {
   // const image = gallery.find(function(item) {
 

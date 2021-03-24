@@ -8,7 +8,7 @@ const Image = require('../../models/image')
 // defining the gallery array and changing it from .js to .json
 router.get('/gallery', async (req, res, next) => {
   try {
-    // return next(new Error("It Blew Up")) Error handling test
+    // return next(new Error("Boom Goes The Dynamite - Something Exploded")) // Error handling test
     const gallery = await Image.find({})
     if (gallery) return res.json(gallery)
     return next(new Error("Unable to locate images."))
