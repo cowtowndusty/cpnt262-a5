@@ -13,24 +13,24 @@ router.use((req, res, next) => {
   next()
 })
 
-// defining home page route
+// render home page route
 router.get('/', (req, res) => {
   res.render('pages/index', { pageTitle: 'JavaScript Image Gallery', dayjs })
 })
 
-// defining home login route
+// render home login route
 router.get('/login', (req, res) => {
   res.render('pages/login', { pageTitle: 'Login Page', dayjs })
 })
 
-// defining home register route
+// render home register route
 router.get('/register', (req, res) => {
   res.render('pages/register', { pageTitle: 'Registration Page', dayjs })
 })
 
-// defining gallery page route
+// render gallery page route
 router.get('/images', (req, res) => {
-  res.render('pages/images', { pageTitle: 'Gallery Directory' })
+  res.render('pages/images', { pageTitle: 'Images Subdirectory', dayjs })
 })
 
 // defining 'images' single image page rendered view based on :id

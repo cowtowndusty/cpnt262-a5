@@ -4,6 +4,7 @@ require('dotenv').config()
 const path = require('path')
 const express = require('express')
 const router = require('./routes/index')
+const dayjs = require('dayjs')
 
 const app = express()
 // set the view engine to ejs
@@ -27,7 +28,7 @@ app.use((err,req,res,next) => {
   const status = err.status || 500
   res.locals.status = status
   res.status(status)
-  res.render('pages/404')
+  res.render('pages/404', {dayjs})
 })
 // setting backup port
 const PORT = process.env.PORT || 3000

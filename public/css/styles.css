@@ -59,6 +59,25 @@ body {
   background-color: #D9E4DC;
 }
 
+/* registration login page styling */
+
+.reg-log {
+  height: 90vh;
+}
+
+/* images subdir styling */
+
+.images-sub {
+  height: 74.5vh;
+  text-align: center;
+}
+
+/* 404 page styling */
+
+.link-404 {
+  height: 83vh;
+}
+
 /* Layout & Styling for the content of the responsive image gallery */
 
 .container {

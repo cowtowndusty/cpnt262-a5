@@ -1,5 +1,5 @@
 module.exports = {
   copyright: 'Dustin Shulz. MIT License.',
-  pageTitle: 'Oops, sorry! This page cannot be displayed.',
+  pageTitle: 'Oops, sorry!',
   siteTitle: 'CPNT262-A5'
 }

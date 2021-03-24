@@ -12,8 +12,11 @@
 </head>
 <body>
   <%- include('../partials/nav') %>
-  <h1><%=status%> Error - <%=message%></h1>
-  <img src="/images/wrong hood.gif">
-  <h2><a href="/">Back to Home Page</a></h2>
+  <div class="link-404">
+    <h1><%=status%> Error - <%=message%></h1>
+    <img src="/images/wrong hood.gif">
+    <h2><a href="/">Back to Home Page</a></h2>
+  </div>
 </body>
+<%- include('../partials/footer') %>
 </html>
