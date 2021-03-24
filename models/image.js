@@ -11,7 +11,8 @@ const gallerySchema = new mongoose.Schema(
     height: Number,
     pathURL: String,
     linkURL: String,
-    credit: String
+    credit: String,
+    creditURL: String
   }
 )
 
