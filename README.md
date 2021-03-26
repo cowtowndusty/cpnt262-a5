@@ -8,8 +8,11 @@
 
 A dynamically generated image gallery and single image endpoint via JSON data from MongoDB utilizing fetch and deployed to Heroku.
 
-Single image landing page: 
+The navbar will take you to gallery, registration and login page. 
 
+You can find the single image landing page @ https://sait-cpnt262-a5.herokuapp.com/images/
+
+A custom 404 page will display when you attempt to enter any non-existent endpoint.
 
 ## Attributions:
 
