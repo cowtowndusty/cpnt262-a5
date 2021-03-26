@@ -23,6 +23,10 @@ body {
 h1 {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: clamp(1.2rem, 2.5vw, 2.5rem);
+  text-align: center;
+  color: #3F4135;
+  margin-bottom: 1rem;
+  padding-bottom: 1.25rem;
 }
 
 h2, h3, h4, h5, h6 {
@@ -32,27 +36,19 @@ h2, h3, h4, h5, h6 {
   font-size: clamp(1rem, 2.5vw, 2rem);
 }
 
+h2 {
+  text-align: center;
+  margin: 0;
+  color: #3F4135;
+  padding-bottom: 0.5rem;
+}
+
 footer {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: clamp(0.875rem, 1.5vw, 1.2rem);
   text-align: center;
   margin: 1rem;
   height: 2rem;
-}
-
-h1 {
-  text-align: center;
-  color: #3F4135;
-  margin-bottom: 1rem;
-  padding-bottom: 1.25rem;
-  border-bottom: 0.075rem solid #3F4135;
-}
-
-h2 {
-  text-align: center;
-  margin: 0;
-  color: #3F4135;
-  padding-bottom: 0.5rem;
 }
 
 body {
@@ -68,8 +64,18 @@ body {
 /* images subdir styling */
 
 .images-sub {
-  height: 74.5vh;
+  height: 83vh;
   text-align: center;
+}
+
+/* single image subdir styling */
+
+.image-sub {
+  height: 83vh; 
+}
+
+.fig-img {
+  margin: 0 auto;
 }
 
 /* 404 page styling */

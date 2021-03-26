@@ -2,15 +2,22 @@
 <html lang="en">
 <head>
   <%- include('../partials/header') %>
+  <link rel="stylesheet" href="/css/login.css">
 </head>
 <body>
-  <figure>
-    <h2><%=pic.title%></h2>
-    <a href="<%=pic.linkURL%>" target="_blank"><img src="/<%=pic.pathURL%>" alt="<%=pic.description%>" height="<%=pic.height%>" width="<%=pic.width%>"></a>
-    <figcaption>
-      <p><%=pic.description%></p>
-      <p>Photo by: <a href="<%=pic.creditURL%>" class="link" target="_blank"><%=pic.credit%></a></p>
-    </figcaption>
-  </figure>
+  <main>
+    <%- include('../partials/nav') %>
+    <div class="image-sub">
+    <figure class="fig-img">
+      <h1><%=pic.title%></h1>
+      <a href="<%=pic.linkURL%>" target="_blank"><img src="/<%=pic.pathURL%>" alt="<%=pic.description%>" height="<%=pic.height%>" width="<%=pic.width%>"></a>
+      <figcaption>
+        <p><%=pic.description%></p>
+        <p>Photo by: <a href="<%=pic.creditURL%>" class="link" target="_blank"><%=pic.credit%></a></p>
+      </figcaption>
+    </figure>
+    </div>
+  </main>
+  <%- include('../partials/footer') %>
 </body>
 </html>

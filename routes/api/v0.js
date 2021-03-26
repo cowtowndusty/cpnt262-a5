@@ -5,7 +5,7 @@ const express = require('express')
 const router = express.Router()
 const Image = require('../../models/image')
 
-// defining the gallery array and changing it from .js to .json
+// retrieve images via async/await
 router.get('/gallery', async (req, res, next) => {
   try {
     // return next(new Error("Boom Goes The Dynamite - Something Exploded")) // Error handling test
@@ -17,5 +17,5 @@ router.get('/gallery', async (req, res, next) => {
   }
 })
 
-// exporting module
+// export module
 module.exports = router

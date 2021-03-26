@@ -33,22 +33,15 @@ router.get('/images', (req, res) => {
   res.render('pages/images', { pageTitle: 'Images Subdirectory', dayjs })
 })
 
-// defining 'images' single image page rendered view based on :id
+// defining 'images' single image page rendered view based on :id via try/catch.
 router.get('/images/:id', async (req, res, next) => {
-  // const image = gallery.find(function(item) {
-
-  //   return item.title === req.params.title
-  // })
-
-  // if (!image) {
-  //   res.sendStatus(404)
-  //}
   try {
     const image = await Image.findOne({id: req.params.id})
 
     return res.render('pages/image', {
       pageTitle: image.title,
-      pic: image
+      pic: image,
+      dayjs
     })
   } catch (err) {
     return next(err)
