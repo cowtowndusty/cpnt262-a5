@@ -1,16 +1,18 @@
-# A dynamically generated image gallery and single image endpoint via JSON data from MongoDB utilizing fetch and deployed to Heroku.
-
-The navbar will take you to gallery, a mock registration and login page. 
-
-You can find the single image landing page @ https://dynamic-image-gallery.herokuapp.com/images/
-
-A custom 404 page will display when you attempt to enter any non-existent endpoint.
+# Dynamic Image Gallery
 
 ## Repository Owner & Maintainer: [Dustin Shulz](https://github.com/cowtowndusty)
 
 - [GH Repo](https://github.com/cowtowndusty/dynamic-image-gallery)
 
 - [Deployed Heroku URL](https://dynamic-image-gallery.herokuapp.com/)
+
+A dynamically generated image gallery and single image endpoint via JSON data from MongoDB utilizing fetch and deployed to Heroku.
+
+The navbar will take you to gallery, a mock registration and login page. 
+
+You can find the single image landing page @ https://dynamic-image-gallery.herokuapp.com/images/
+
+A custom 404 page will display when you attempt to enter any non-existent endpoint.
 
 ## Attributions:
 
